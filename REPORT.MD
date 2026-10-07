@@ -102,7 +102,7 @@ Chapters organized by personal contribution.
 
 Implemented a resilient three-method detection chain (DS → DNSKEY → RRSIG). Testing against real domains showed:
 
-- Domains such as `google.com`, `github.com`, and `cloudflare.com` are DNSSEC-signed and detected correctly via DS records;
+- Domains such as `github.com`, and `cloudflare.com` are DNSSEC-signed and detected correctly via DS records;
 - Unsigned domains are correctly reported as failing;
 - Timeout and resolution errors degrade gracefully to a "warning" status instead of crashing the tool.
 
